@@ -4,28 +4,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
-	<head>
-		<style>
-			.about-heading {
-				font-size: 2.5em;
-				color: #222222;
-			}
-			.skills-table {
-				border-collapse: collapse;
-				border-radius: 5px
-			}
-			.skills-table td {
-				border: 2px solid #222222;
-				padding: 8px;
-				text-align: center
-			}
-		</style>
-	</head>
-	<body>
+	<style>
+		.about-heading {
+			font-size: 2.5em;
+			color: #222222;
+		}
+		.skills-table {
+			border-collapse: collapse;
+			border-radius: 5px
+		}
+		.skills-table td {
+			border: 2px solid #222222;
+			padding: 8px;
+			text-align: center
+		}
+	</style>
+	
+
+	<main>
 		<h2 class="about-heading" style="text-align: center; margin-top: 20px;">
 			About Me
 		</h2>
-	
+		
+		<img src="src/img/profile-pic.jpg" alt="Profile Picture;">
+
 		<p style="text-align: justify; margin: 20px; border: 2px solid #222222; padding: 20px; border-radius: 5px;">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		</p>
@@ -53,8 +55,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<img src="src/img/c-icon.jpg" alt="C Logo" width="25" height="25">
 			<img src="src/img/css-logo.jpg" alt="CSS Logo" width="25" height="25">
 		</figure>
-	
-		<section></section>
+		
+		<section>
+			Infomation about skills
+		</section>
 
 		<h3 style="text-align: center; margin-top: 20px;">
 			Projects
@@ -69,13 +73,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         		<h5>PC-Crasher</h5>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
     		</section>
-			<section 
+			<section>
 				<article style="border: 2px solid #222222; padding: 10px; border-radius: 5px;">
         			<h5>Insert Project</h5>
         			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 				</article>
     		</section>
 		</div>
-	</body>
+	</main>
 </BaseLayout>
 
