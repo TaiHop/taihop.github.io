@@ -1,13 +1,13 @@
-- src/Components/Footer.astro:
+- src/components/Footer.astro:
   - description: "Footer partial exists"
     check: ConfirmFileExists
-- src/Components/Nav.astro:
+- src/components/Nav.astro:
   - description: "Nav partial exists"
     check: ConfirmFileExists
-- src/Components/Header.astro:
+- src/components/Header.astro:
   - description: "Header partial exists"
     check: ConfirmFileExists
-- src/Layouts/BaseLayout.astro:
+- src/layouts/BaseLayout.astro:
   - description: "Base layout exists"
     check: ConfirmFileExists
 - src/pages/index.astro:
