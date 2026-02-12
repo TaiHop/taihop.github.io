@@ -1,6 +1,6 @@
 ---
 const pageTitle = "Landing Page";
-import BaseLayout from "../Layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 <BaseLayout pageTitle = {pageTitle}>
@@ -26,10 +26,16 @@ import BaseLayout from "../Layouts/BaseLayout.astro";
 	<section>
 		<div>
 			<h2 class="about-heading" style="text-align: center; margin-top: 20px;">
-				About Me
+				All About Me
 			</h2>
 			<div>
-				<img src="src/img/profile-pic.jpg" alt="Profile Picture; centered" style="display: block; margin: 20px auto; width: 200px; height: 150px; border: 2px solid #222222;"/>
+				<img 
+				src ="/img/profile-pic.jpg" 
+				alt ="Profile Picture; centered"
+				class = profile-pic
+				style="centered"
+				/>
+				
 				<p style="text-align: justify; margin: 20px; border: 2px solid #222222; padding: 20px; border-radius: 5px;">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				</p>
@@ -52,13 +58,19 @@ import BaseLayout from "../Layouts/BaseLayout.astro";
 			</tr>
 		</table>
 	
+		<img 
+			src="/img/python-html.png" 
+			alt="Python Logo" 
+			width="25" 
+			height="25"/>
+
 		<figure style="text-align: center; margin-top: 20px;">
- 			<img src="src/img/python-html.png" alt="Python Logo" width="25" height="25"/>
-			<img src="src/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
-			<img src="src/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
-			<img src="src/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
-			<img src="src/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
-			<img src="src/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
+ 			
+			<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
+			<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
+			<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
+			<img src="/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
+			<img src="/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
 		</figure>
 		
 		<section>

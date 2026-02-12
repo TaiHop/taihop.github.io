@@ -1,20 +1,20 @@
-- src/Components/Footer.astro:
+- src/components/Footer.astro:
   - description: "Footer partial exists"
     check: ConfirmFileExists
-- src/Components/Nav.astro:
+- src/components/Nav.astro:
   - description: "Nav partial exists"
     check: ConfirmFileExists
-- src/Components/Header.astro:
+- src/components/Header.astro:
   - description: "Header partial exists"
     check: ConfirmFileExists
-- src/Layouts/BaseLayout.astro:
+- src/layouts/BaseLayout.astro:
   - description: "Base layout exists"
     check: ConfirmFileExists
 - src/pages/index.astro:
   - description: "Index page calls base layout in preamble"
     check: MatchFileFragment
     options:
-      fragment: 'import BaseLayout from "../Layouts/BaseLayout.astro"'
+      fragment: 'import BaseLayout from "../layouts/BaseLayout.astro"'
       count: 1
       exact: true
 - src/pages/index.astro:
