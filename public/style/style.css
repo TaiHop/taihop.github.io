@@ -1,6 +1,7 @@
 :root {
     --primary-color: #424242;
     --secondary-color: #D9BD07;
+    --third-color: #F2F1DC;
     --font-family: "Brush Script MT", cursive;
 }
 
@@ -14,9 +15,10 @@ p {
 .project {
     background-color: var(--primary-color);
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration-color: var(--third-color);
 }
 
 .about-heading {
