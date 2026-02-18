@@ -34,3 +34,11 @@ p {
 	padding: 8px;
 	text-align: center
 }
+.project h1 {
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+.project p {
+    color: var(--third-color);
+    font-family: var(--font-family);
+}
