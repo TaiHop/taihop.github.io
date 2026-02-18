@@ -1,24 +1,23 @@
-:root{
-    --webco-purple: #432194;
-    --webco-grey: #D9D9D9;
-    --webco-printer-black: #222;
-    --webco-white: #fff;
+::selection {
+    background: var(--webco-color-gray);
+    color: var(--webco-white);
 }
 
-::selection {
-    background: var(--webco-grey);
-    color: var(--webco-white);
-
+:root {
+    --webco-color-purple-bg: #432194;
+    --webco-color-gray: #D9D9D9;
+    --webco-printer-black: #222;
+    --webco-white: #fff;
 }
 
 * {
     margin: 0;
     line-height: 2rem;
-    color: #222;
+    color: var(--webco-printer-black);
 }
 
 ul, li, i, b, em, strong {
-    color: var(--webco-grey);
+    color: var(--webco-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +37,7 @@ html {
 }
 
 header {
-    background: var(--webco-grey);
+    background: var(--webco-color-gray);
     height: 3rem;
     align-items: center;
     display: grid;
@@ -56,7 +55,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--webco-purple);
+    color: var(--webco-color-purple-bg);
 }
 
 nav a:not(:last-of-type) {
@@ -64,7 +63,7 @@ nav a:not(:last-of-type) {
 }
 
 nav a:hover {
-    text-decoration: underline dashed var(--webco-purple) 1px;
+    text-decoration: underline dashed var(--webco-color-purple-bg) 1px;
 }
 
 body {
@@ -72,7 +71,7 @@ body {
 }
 
 footer {
-    background: var(--webco-grey);
+    background: var(--webco-color-gray);
     height: 6rem;
     align-content: center;
 }
@@ -99,16 +98,15 @@ article p {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "Times New Roman";
 }
 
 blockquote {
     padding-left: 1rem;
-    border-left: 3px solid var(--webco-grey);
+    border-left: 3px solid --webco-color-gray;
 }
 
 th, td {
-    border: 1px solid var(--webco-grey);
+    border: 1px solid var(--webco-color-gray);
 }
 
 #search {
@@ -135,15 +133,11 @@ th, td {
 
 .full__purple_band {
     width: 100%;
-    background: var(--webco-purple);
-}
+    background: var(--webco-color-purple-bg);
+} 
 
-.full__purple_band :is(h1, h2, h3, h4, h5, h6) {
+.full__purple_band :is(h1, h2, h3, h4, h5, h6, p) {
     color: var(--webco-white);
-}
-
-.full__purple_band p {
-    color: var(--webco-grey);
 }
 
 .input__rounded {
@@ -156,7 +150,7 @@ th, td {
 }
 
 .article__border_right:not(:last-of-type) {
-    border-right: 1px dashed var(--webco-grey);
+    border-right: 1px dashed var(--webco-color-gray);
 }
 
 .gap__3_rem {
