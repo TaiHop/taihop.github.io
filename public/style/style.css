@@ -1,44 +1,93 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
 :root {
     --primary-color: #424242;
     --secondary-color: #D9BD07;
-    --third-color: #F2F1DC;
+    --third-color: #E8E3BE;
+    --fourth-color: #ffffff;
+    --fifth-color: #78f855;
     --font-family: "Brush Script MT", cursive;
 }
-
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-    font-family: "Brush Script MT", cursive;
-}
-
-.project {
+body {
+    font-family: var(--font-family);
     background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 20px;
+}
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+.project {
+    border: var(--third-color) solid 2px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration-color: var(--third-color);
+    box-shadow: 0 2px 4px var(--primary-color);;
 }
-
-.about-heading {
-	font-size: 2.5em;
-	color: #222222;
-}
-.skills-table {			
-    border-collapse: collapse;
-	border-radius: 5px
-}
-.skills-table td {
-	border: 2px solid #222222;
-	padding: 8px;
-	text-align: center
-}
-.project h1 {
-    color: var(--secondary-color);
+.project h2 {
+    color: var(--third-color);
     font-family: var(--font-family);
 }
 .project p {
     color: var(--third-color);
     font-family: var(--font-family);
 }
+.about-heading {
+    color: var(--third-color);
+    font-family: var(--font-family);
+}
+a {
+    color: var(--third-color);
+}
+.profile-pic {
+    border-radius: 5px;
+    border: 2px solid var(--third-color);
+}
+.skills {
+max-width: 800px;
+margin: auto;
+text-align: center;
+}
+
+.skills h2 {
+font-size: 2rem;
+margin-bottom: 1.5rem;
+}
+
+.skill {
+margin-bottom: 1rem;
+}
+
+.skill p {
+font-weight: bold;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    padding: 10px;
+}
+
+/* Skill Bar Container */
+.skill-bar {
+width: 100%;
+background-color: var(--third-color);
+border-radius: 5px;
+overflow: hidden
+}
+
+/* Progress Bar */
+progress {
+text-align: right;
+padding: 10px;
+border-radius: 5px;
+}
+
