@@ -1,0 +1,16 @@
+---
+const profilePic = "/img/profile-pic.jpg";
+---
+
+<section class="full__three_column_img">
+	<div style="text-align: center; margin-top: 20px;">
+	    <div class="full__three_column gap__3_rem">
+    		<div class="span__2_col">
+				<p style="text-align: Left; margin: 20px; border: 4px solid var(--primary-color); color: var(--primary-color); padding: 20px; border-radius: 5px; bold">
+					<slot />
+				</p>
+			</div>
+		<img src ={profilePic} alt ="Profile Picture " class = "profile-pic" style="border: 4px solid var(--primary-color); border-radius: 5px;"/>
+		</div>
+	</div>
+</section>
