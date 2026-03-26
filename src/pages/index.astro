@@ -1,5 +1,5 @@
 ---
-const pageTitle = "Home";
+const pageTitle = "Tai P. Hopkins";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Skill from '../components/Skill.astro';
 import Project from '../components/Project.astro';
@@ -12,7 +12,7 @@ import Contact from "../components/Contact.astro";
 	<AboutMe>
 		Hello! I'm Tai, a passionate programmer with a love for coding and problem-solving. I have experience in various programming languages and enjoy creating innovative solutions to real-world challenges. With a strong background in software development, I am always eager to learn new technologies and expand my skill set. I thrive in collaborative environments and am dedicated to delivering high-quality work.
 	</AboutMe>
-	<section id="skills">
+	<section id="skills" class="viewport">
 		<h2 style="text-align: center; margin-top: 30px;">
 			My Skills
 		</h2>
@@ -54,23 +54,22 @@ import Contact from "../components/Contact.astro";
 				value = 45
 			/>
 		</div>	
+		<div class="gallery">
+			<figure class = "gallery-figure">
+ 				<img src="/img/python-html.png" alt="Python Logo" width="25" height="25"/>
+				<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
+				<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
+				<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
+				<img src="/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
+				<img src="/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
+			</figure>
+		</div>	
 	</section>
 
-	<div class="gallery">
-		<figure style="text-align: center; margin-top: 20px;">
- 			<img src="/img/python-html.png" alt="Python Logo" width="25" height="25"/>
-			<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
-			<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
-			<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
-			<img src="/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
-			<img src="/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
-		</figure>
-	</div>	
-	
-	<section id="projects">
-		<h3 style="text-align: center;">
+	<section id="projects" class="viewport">
+		<h2 style="text-align: center;margin-top: 30px;">
 			Projects
-		</h3>
+		</h2>
 			
 		<div class="full__three_column gap__3_rem">
 			<Project projectName = "DataSeekr" projectLink = "https://github.com/TaiHop/DataSeekr/tree/master">
