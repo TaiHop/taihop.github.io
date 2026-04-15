@@ -78,8 +78,8 @@ progress::-moz-progress-bar {
 }
 
 .skill img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .skill p {
@@ -96,16 +96,36 @@ progress::-moz-progress-bar {
 
 /* KEEP REST SAME */
 
+.project.container {
+    background-color: var(--third-color);
+    color : var(--primary-color);
+}
 .project {
-    border: var(--third-color) solid 2px;
+    border: var(--primary-color) solid 2px;
     border-radius: 8px;
     margin-top: 2rem;
     box-shadow: 0 2px 4px var(--primary-color);
     padding: 2rem;
+    background-color: var(--third-color);
 }
-
-.project h2,
 .project p,
+.project h2 {
+    color: var(--primary-color);
+}
+.project.header {
+    color : var(--primary-color);
+    text-align: center;
+}
+.project-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+.project-link-container {
+    text-align: center;
+
+}
 .about-heading {
     color: var(--third-color);
     font-family: var(--font-family);
@@ -260,5 +280,6 @@ form {
     border-radius: 5px;
 }
 .about-text {
-    color: #222
+    color: #222;
+    font-size: 2rem;
 }
