@@ -27,7 +27,7 @@ const Slider = ({ slides }) => {
 
     return (
         <div className="image-slider">
-            <div className="slider-track">
+            <div className="slider-track full__three_column gap___rem slides">
                 {slides.map((slide, index) => (
                     <div 
                         key = {index} 
@@ -48,16 +48,15 @@ const Slider = ({ slides }) => {
                     </div>
                 ))}
             </div>
-
             <div
-                className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
-                onClick={slideImages}
-            ></div>
+                        className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
+                        onClick={slideImages}
+                    ></div>
 
-            <div
-                className="image-slider-lr-toggle left-toggle fa-solid fa-circle-arrow-left"
-                onClick={slideImages}
-            ></div>
+                    <div
+                        className="image-slider-lr-toggle left-toggle fa-solid fa-circle-arrow-left"
+                        onClick={slideImages}
+                    ></div>
         </div>
     );
 };

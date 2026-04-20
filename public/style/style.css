@@ -25,7 +25,9 @@ body {
     padding: 20px;
 }
 
-
+h3 {
+    color: var(--primary-color);
+}
 p {
     font-size: 1em;
     line-height: 1.6;
@@ -91,6 +93,7 @@ progress::-moz-progress-bar {
     gap: 40px 60px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 4rem;
 }
 
 .project {
@@ -113,14 +116,6 @@ progress::-moz-progress-bar {
     color: var(--primary-color);
 }
 
-/* Links */
-.project-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px;
-}
-
 .project-link-container {
     text-align: center;
 }
@@ -131,7 +126,8 @@ progress::-moz-progress-bar {
 }
 
 a {
-    color: var(--third-color);
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .profile-pic {
@@ -154,6 +150,13 @@ body {
 
 .gap__3_rem {
     grid-gap: 3rem;
+}
+.gap__1rem {
+    grid-gap: 1rem;
+}
+.slides {
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
 }
 
 .span__2_col {
@@ -203,14 +206,14 @@ header a {
 }
 
 footer {
-    background: var(--third-color);
+    background: var(--primary-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
 footer a {
-    color: var(--primary-color);
+    color: var(--third-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -233,51 +236,6 @@ footer a {
     align-items: center;
 }
 
-form {
-  max-width: 400px;
-  padding: 20px;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  background: var(--third-color);
-  margin: 0 auto;
-}
-
-.contact-section {
-    padding: 2rem;
-    border-radius: 10px;
-    margin: 2rem auto;
-    max-width: 400px;  
-}
-
-.contact-section h2 {
-    text-align: center;
-    color: var(--third-color);
-}
-
-.contact-section input {
-    text-align: center;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    background: var(--primary-color);
-}
-
-.contact-section button {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background: var(--primary-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.form-sub {
-    display: inline-block;
-    padding: 10px;
-    margin-top: 1rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-}
 .about-text {
     color: #222;
     font-size: 2rem;
