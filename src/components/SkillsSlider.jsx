@@ -8,6 +8,8 @@ const topSkills = [
   { img: "/img/r.png", alt: "R logo", skill: "R", value: 60 },
   { img: "/img/javascript.png", alt: "JavaScript logo", skill: "JavaScript", value: 60 },
   { img: "/img/c-sharp-logo.jpg", alt: "C# logo", skill: "C#", value: 45 },
+  { img: "/img/bs4.png", alt: "BeautifulSoup logo", skill: "BeautifulSoup", value: 40 },
+  { img: "/img/pandas.png", alt: "Pandas logo", skill: "Pandas", value: 40 },
 ];
 
 const bottomSkills = [
@@ -18,6 +20,8 @@ const bottomSkills = [
   { img: "/img/mongodb.png", alt: "MongoDB logo", skill: "MongoDB", value: 55 },
   { img: "/img/docker.png", alt: "Docker logo", skill: "Docker", value: 45 },
   { img: "/img/streamlit.png", alt: "Streamlit logo", skill: "Streamlit", value: 50 },
+  { img: "/img/selenium.png", alt: "Selenium logo", skill: "Selenium", value: 40 },
+  { img: "/img/chart.png", alt: "matplotlib logo", skill: "matplotlib", value: 40 },
 ];
 
 
